@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Note({ note, onDelete }) {
-  const formattedDate = new Date(note.created_at).toLocaleDateString("Africa/Nairobi");
+  const formattedDate = new Date(note.created_at).toLocaleDateString("en-us");
   return (
     <div className="note-container">
       <p className="note-title">{note.title}</p>
