@@ -4,7 +4,7 @@ import api from '../api'
 import { REFRESH_TOKEN, ACCESS_TOKEN } from '../constants'
 import { useEffect, useState } from 'react'
 
-function ProtectedRoute({children}) {
+export default function ProtectedRoute({children}) {
     const [isAuthorized, setIsAuthorized] = useState(null)
     useEffect(() => {
         auth().catch(() => setIsAuthorized(false))
