@@ -29,8 +29,8 @@ export default function Home() {
         alert("Note deleted!");
       } else {
         alert("Failed to delete note.");
-        getNotes();
-      }
+    }
+    getNotes();
     });
   };
 
