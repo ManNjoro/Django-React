@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../api";
 import Note from "../components/Note";
+import "../styles/Home.css"
 
 export default function Home() {
   const [notes, setNotes] = useState([]);
@@ -50,7 +51,7 @@ export default function Home() {
         ))}
       </div>
       <h2>Create Note</h2>
-      <form onSubmit={createNote}>
+      <form onSubmit={createNote} className="form">
         <label htmlFor="title">Title:</label>
         <br />
         <input
